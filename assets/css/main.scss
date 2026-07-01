@@ -317,7 +317,7 @@ body:has(.holiday-banner) .page-hero {
   }
   body:has(.holiday-banner) .hero,
   body:has(.holiday-banner) .page-hero {
-    padding-top: calc(72px + 32px); /* ← adjust 38px if content still overlaps */
+    padding-top: calc(72px + 42px); /* ← adjust 38px if content still overlaps */
   }
 }
 
