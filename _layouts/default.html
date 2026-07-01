@@ -1,0 +1,39 @@
+---
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+
+  <!-- Salon meta for JS -->
+  <meta name="salon-phone" content="{{ site.salon.phone }}" />
+  <meta name="salon-email" content="{{ site.salon.email }}" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+  <!-- SEO tag (requires jekyll-seo-tag plugin) -->
+  {% seo %}
+</head>
+<body>
+
+  {% include header.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-label="Image agrandie">
+    <button class="lightbox-close" aria-label="Fermer">&times;</button>
+    <img src="" alt="Photo galerie" />
+  </div>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

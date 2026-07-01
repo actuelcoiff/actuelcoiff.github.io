@@ -1,0 +1,85 @@
+# ============================================================
+#  Actuel Coiff — Jekyll Configuration
+#  Edit the fields below to customize your salon website.
+# ============================================================
+
+# --- Site identity ---
+title:          "Actuel Coiff"
+tagline:        "Salon de coiffure mixte à Rennes"
+description:    "Salon de coiffure mixte et espace coiffure enfant à Rennes, Cleunay. Coupes, colorations, mèches, permanentes. Sur rendez-vous du mardi au samedi."
+baseurl:        ""          # If hosting at username.github.io/repo-name, put /repo-name here
+url:            "https://actuelcoiff.github.io"          # "https://www.actuelcoiff.fr"
+logo:           '/assets/images/logo_256x256.png'
+
+# --- Contact info (edit these!) ---
+salon:
+  name:          "Actuel Coiff"
+  owner:         "Fabienne Dutier"
+  phone:         "02 99 67 31 75"
+  phone_href:    "tel:0299673175"
+  address_line1: "2 Rue Champion de Cicé"
+  address_line2: "35000 Rennes, France"
+  neighborhood:  "Cleunay"
+  email:         "actuelcoiff@orange.fr"           # Add your email if you want a contact form
+  email_href:    "mailto:actuelcoiff@orange.fr"
+  google_maps:   "https://maps.google.com/?q=2+Rue+Champion+de+Cicé+35000+Rennes"
+
+# --- Opening hours ---
+hours:
+  - day:   "Lundi"
+    times: "Fermé"
+    closed: false
+  - day:   "Mardi – Mercredi"
+    times: "08h30 – 12h00 / 13h30 – 18h00"
+  - day:   "Jeudi – Vendredi"
+    times: "09h00 – 19h00"
+  - day:   "Samedi"
+    times: "08h30 – 15h00"
+  - day:   "Dimanche"
+    times: "Fermé"
+    closed: false
+
+# --- Social media (leave blank to hide) ---
+social:
+  facebook:  ""
+  instagram: ""
+
+# --- Trust labels / badges --- 
+# Add as many as you want. Remove logo: if you only have text.
+trust_labels:
+  - name: "Label Éco-Défis"
+    logo: '/assets/images/labels/ecolabel.png'
+  # - name: "Artisan de France"
+  #   logo: '/assets/images/labels/artisan-de-france.png'
+
+# --- Holiday banner ---#
+# Set show: true to display the banner, false to hide it
+holiday-banner:
+  show: false
+  message: "Le salon est fermé pour congés du 2 au 16 août inclus."
+  reopen: "Réouverture le mardi 19 août à 08h30"
+
+# --- Build settings ---
+markdown:    kramdown
+permalink:   pretty
+theme:       ~            # We use a custom theme, not a gem theme
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# --- Collections ---
+collections:
+  gallery:
+    output: false
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "*.sh"
+
+# Make _pages directory work as regular pages
+include:
+  - _pages

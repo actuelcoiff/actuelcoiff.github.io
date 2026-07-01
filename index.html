@@ -1,0 +1,298 @@
+---
+layout: default
+title: "Salon de coiffure mixte à Rennes"
+description: "Actuel Coiff, salon de coiffure mixte et espace coiffure enfant à Rennes, Cleunay. Coupes, colorations, mèches, permanentes. Sur rendez-vous du mardi au samedi."
+---
+
+<!-- ====================================================
+     HERO SLIDER
+     To change slides: edit the background-image URLs below.
+     Each <li> is one slide. Add/remove <li> items as needed.
+     ==================================================== -->
+<section class="hero" aria-label="Présentation du salon">
+
+  <ul class="hero-slides">
+
+    <!-- SLIDE 1 — replace the image URL with your own photo -->
+    <li class="hero-slide active"
+        style="background-image: url('{{ '/assets/images/hero-1.png' | relative_url }}');"
+        aria-hidden="true">
+    </li>
+
+    <!-- SLIDE 2 -->
+    <li class="hero-slide"
+        style="background-image: url('{{ '/assets/images/hero-2.jpg' | relative_url }}');"
+        aria-hidden="true">
+    </li>
+
+  </ul>
+
+  <div class="hero-content">
+    <p class="section-sub">Rennes · Cleunay</p>
+    <h1 class="hero-title">
+      Salon de coiffure<br>
+      <em>mixte à Rennes</em>
+    </h1>
+    <p class="hero-desc">
+      Coupes, colorations, mèches, permanentes — pour femmes, hommes et enfants,
+      sur rendez-vous du mardi au samedi.
+    </p>
+    <div class="hero-actions">
+      <a href="{{ '/coiffure/' | relative_url }}" class="btn btn--white">Nos prestations</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn--solid">Nous contacter</a>
+    </div>
+
+    {% if site.trust_labels and site.trust_labels.size > 0 %}
+    <div class="hero-labels">
+      {% for label in site.trust_labels %}
+      <div class="hero-label">
+        {% if label.logo %}
+        <img src="{{ label.logo | relative_url }}"
+              alt="Logo {{ label.name }}"
+              class="hero-label__logo" />
+        {% endif %}
+        <span class="hero-label__name">{{ label.name }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Slider navigation dots -->
+  <ul class="hero-dots" aria-label="Navigation diaporama">
+    <li><button class="active" aria-label="Diapositive 1"></button></li>
+    <li><button aria-label="Diapositive 2"></button></li>
+  </ul>
+
+</section>
+
+<!-- ====================================================
+     INTRO / WELCOME
+     ==================================================== -->
+<section class="intro">
+  <div class="container">
+    <p class="section-sub">Bienvenue</p>
+    <h2 class="section-title">{{ site.salon.name }}</h2>
+    <div class="divider divider--center"></div>
+    <p>
+      Vous recherchez un <strong>salon de coiffure mixte</strong> à <strong>Rennes</strong> ?
+      Vous souhaitez un <strong>espace dédié à la coiffure de vos enfants</strong> ?
+      Actuel Coiff, salon de coiffure de quartier tenu par <em>Fabienne Dutier</em>,
+      situé à Cleunay, proche du nouveau quartier de la Courrouze,
+      vous accueille sur rendez-vous du mardi au samedi.
+    </p>
+    <a href="{{ '/coiffeur/' | relative_url }}" class="btn">En savoir plus</a>
+  </div>
+</section>
+
+<!-- ====================================================
+     HIGHLIGHTS (3 icons)
+     ==================================================== -->
+<section class="features">
+  <div class="container">
+    <div class="features-grid">
+
+      <div class="feature">
+        <div class="feature-icon">✂️</div>
+        <h3>Salon mixte</h3>
+        <p>Coupes femmes, hommes et enfants adaptées à chaque morphologie et style de vie.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🎨</div>
+        <h3>Colorations &amp; mèches</h3>
+        <p>Produits Wella pour respecter la santé et l'éclat de vos cheveux.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">📍</div>
+        <h3>Quartier Cleunay</h3>
+        <p>Face à l'arrêt de bus Dargent, à mi-chemin des stations de métro B Cleunay et Mabilais.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     ABOUT SNIPPET
+     ==================================================== -->
+<section class="about">
+  <div class="container">
+    <div class="about-inner">
+
+      <div class="about-img">
+        <!-- Replace with a photo of the salon interior -->
+        <img src="{{ '/assets/images/salon-exterieur.jpeg' | relative_url }}"
+             alt="Extérieur du salon Actuel Coiff à Rennes"
+             loading="lazy" />
+      </div>
+
+      <div class="about-text">
+        <p class="section-sub">Le salon</p>
+        <h2 class="section-title">Actuel Coiff<br><em>à Rennes</em></h2>
+        <div class="divider"></div>
+        <p>
+          Actuel Coiff est un salon de coiffure de quartier implanté depuis plus de 40 ans à Cleunay, Rennes,
+          tenu par Fabienne Dutier depuis 2009. Le salon propose des prestations
+          personnalisées pour femmes, hommes et enfants dans une atmosphère conviviale.
+        </p>
+        <p>
+          Pour la santé et le respect de vos cheveux, j'ai sélectionné les produits de la
+          gamme <strong>Wella</strong> et <strong>Subtil</strong>.
+        </p>
+        <a href="{{ '/coiffeur/' | relative_url }}" class="btn">Découvrir le salon</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     SERVICES OVERVIEW
+     ==================================================== -->
+<section class="services">
+  <div class="container">
+    <div class="services-header">
+      <p class="section-sub">Nos prestations</p>
+      <h2 class="section-title">Coiffure</h2>
+      <div class="divider divider--center"></div>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-card__icon">✂️</div>
+        <h3>Coupes et Coiffures</h3>
+        <p>Coupe femme, homme et enfant adaptée à votre morphologie, vos envies et la nature de vos cheveux. Coiffure à la demande : tresse, chignon, mise en plis, ou autre.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">👩‍🦰🎨</div>
+        <h3>Colorations</h3>
+        <p>Coloration, balayage et mèches réalisés avec les produits Wella pour un résultat lumineux et une mise en valeur de votre chevelure.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">👩‍🦱🪮</div>
+        <h3>Permanentes</h3>
+        <p>Permanente pour apporter volume, boucles ou ondulations selon la texture de vos cheveux.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">👶</div>
+        <h3>Espace enfants</h3>
+        <p>Un espace dédié aux plus petits pour que la coupe soit un moment agréable et sans stress.</p>
+      </div>
+
+    </div>
+
+    <div class="services-cta">
+      <a href="{{ '/coiffure/' | relative_url }}" class="btn btn--solid">Toutes nos prestations</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     GALLERY PREVIEW
+     ==================================================== -->
+<section class="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <p class="section-sub">Nos réalisations</p>
+      <h2 class="section-title">Galerie <em>photos</em></h2>
+      <div class="divider divider--center"></div>
+    </div>
+
+    <!-- Add / remove <div class="gallery-item"> as needed.
+         Replace src with your own photos. -->
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="{{ '/assets/images/gallery/coiffure_1_03.png' | relative_url }}"
+             alt="Coiffure réalisée au salon Actuel Coiff" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/images/gallery/coiffure_2_02.png' | relative_url }}"
+             alt="Coiffure réalisée au salon Actuel Coiff" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/images/gallery/coiffure_3_02.png' | relative_url }}"
+             alt="Coiffure réalisée au salon Actuel Coiff" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/images/gallery/coiffure_4_02.png' | relative_url }}"
+             alt="Coiffure réalisée au salon Actuel Coiff" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/images/gallery/coiffure_fete_1.png' | relative_url }}"
+             alt="Coiffure réalisée au salon Actuel Coiff" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/images/gallery/coloration_1.png' | relative_url }}"
+             alt="Coiffure réalisée au salon Actuel Coiff" loading="lazy" />
+      </div>
+      <div class="gallery-item">
+        <img src="{{ '/assets/images/gallery/coupe_homme_1.png' | relative_url }}"
+             alt="Coiffure réalisée au salon Actuel Coiff" loading="lazy" />
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="{{ '/galerie-photos/' | relative_url }}" class="btn">Toutes nos photos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     HOURS + CONTACT
+     ==================================================== -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-inner">
+
+      <!-- Hours -->
+      <div>
+        <p class="section-sub">Horaires</p>
+        <h2 class="section-title">Infos <em>pratiques</em></h2>
+        <div class="divider"></div>
+        {% include hours.html %}
+        <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; margin-top:10px;">
+          Le salon est fermé le lundi et ouvert en journée continue en fin de semaine.
+        </p>
+      </div>
+
+      <!-- Contact details + map -->
+      <div>
+        <p class="section-sub">Nous trouver</p>
+        <h2 class="section-title">Contact</h2>
+        <div class="divider"></div>
+        <ul class="contact-details">
+          <li>
+            <span class="icon">📍</span>
+            <span>{{ site.salon.address_line1 }},<br>{{ site.salon.address_line2 }}</span>
+          </li>
+          <li>
+            <span class="icon">📞</span>
+            <a href="{{ site.salon.phone_href }}">{{ site.salon.phone }}</a>
+          </li>
+          {% if site.salon.email != "" %}
+          <li>
+            <span class="icon">✉️</span>
+            <a href="mailto:{{ site.salon.email }}">{{ site.salon.email }}</a>
+          </li>
+          {% endif %}
+        </ul>
+
+        <iframe
+          class="map-embed"
+          title="Localisation Actuel Coiff"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.3357150847264!2d-1.702497626604097!3d48.10375925351903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ee07ea7408c07%3A0xc3cf2ddefa9c69f5!2sActuel&#39;Coiff!5e0!3m2!1sen!2sfr!4v1776787693705!5m2!1sen!2sfr">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>

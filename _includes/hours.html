@@ -1,0 +1,8 @@
+<table class="hours-table" aria-label="Horaires d'ouverture">
+  {% for h in site.hours %}
+  <tr>
+    <td {% if h.closed %}class="closed"{% endif %}>{{ h.day }}</td>
+    <td {% if h.closed %}class="closed"{% endif %}>{{ h.times }}</td>
+  </tr>
+  {% endfor %}
+</table>

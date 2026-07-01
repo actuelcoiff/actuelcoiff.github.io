@@ -1,0 +1,44 @@
+<header class="site-header" role="banner">
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="{{ site.title }} — Accueil">
+      {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" />
+      {% else %}
+        <span class="site-logo__text">{{ site.title }}</span>
+      {% endif %}
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="main-nav" aria-label="Navigation principale">
+      <ul class="site-nav">
+        <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+        <li><a href="{{ '/coiffeur/' | relative_url }}">Le Salon</a></li>
+        <li><a href="{{ '/coiffure/' | relative_url }}">Coiffure</a></li>
+        <li><a href="{{ '/galerie-photos/' | relative_url }}">Photos</a></li>
+        <li><a href="{{ '/actualites/' | relative_url }}">Actualités</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+{% if site.holiday-banner.show %}
+<div class="holiday-banner" role="alert">
+  <div class="holiday-banner__inner">
+    <span class="holiday-banner__icon">🌴</span>
+    <p>
+      <strong>{{ site.holiday-banner.message }}</strong>
+      {{ site.holiday-banner.reopen }}
+    </p>
+    <span class="holiday-banner__icon">🌴</span>
+  </div>
+</div>
+{% endif %}
