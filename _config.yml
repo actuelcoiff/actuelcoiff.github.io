@@ -55,7 +55,7 @@ trust_labels:
 # --- Holiday banner ---#
 # Set show: true to display the banner, false to hide it
 holiday-banner:
-  show: true
+  show: false
   message: "Le salon est fermé pour congés du 2 au 16 août inclus."
   reopen: "Réouverture le mardi 19 août à 08h30"
 
