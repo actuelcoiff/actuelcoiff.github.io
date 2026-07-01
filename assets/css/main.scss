@@ -245,6 +245,12 @@ a  { color: inherit; text-decoration: none; }
   .site-nav.open { transform: translateY(0); }
   .site-nav a { padding: 14px 24px; font-size: 0.8rem; }
   .site-nav a::after { display: none; }
+  .site-logo img {
+    height: 28px;
+  }
+  .site-logo__text {
+    font-size: 1.1rem;
+  }
 }
 
 /* ============================================================
