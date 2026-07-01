@@ -251,16 +251,6 @@ a  { color: inherit; text-decoration: none; }
   .site-logo__text {
     font-size: 1.1rem;
   }
-  .holiday-banner__inner {
-    padding: 8px 16px;
-    gap: 8px;
-  }
-  .holiday-banner__icon {
-    font-size: 1rem;
-  }
-  .holiday-banner p {
-    font-size: 0.78rem;
-  }
 }
 
 /* ============================================================
@@ -291,12 +281,12 @@ a  { color: inherit; text-decoration: none; }
 }
 
 .holiday-banner__icon {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   flex-shrink: 0;
 }
 
 .holiday-banner p {
-  font-size: 1.2rem;
+  font-size: 0.88rem;
   letter-spacing: 0.02em;
   margin: 0;
 }
@@ -313,9 +303,21 @@ body:has(.holiday-banner) .page-hero {
 }
 
 @media (max-width: 768px) {
+  .holiday-banner__inner {
+    padding: 7px 12px;
+    gap: 6px;
+  }
+  .holiday-banner__icon {
+    display: none;        /* ← hides the emoji on mobile to save space */
+  }
+  .holiday-banner p {
+    font-size: 0.72rem;  /* ← adjust this if still too big */
+    letter-spacing: 0;
+    line-height: 1.4;
+  }
   body:has(.holiday-banner) .hero,
   body:has(.holiday-banner) .page-hero {
-    padding-top: calc(72px + 36px); /* navbar + banner height */
+    padding-top: calc(72px + 38px); /* ← adjust 38px if content still overlaps */
   }
 }
 
